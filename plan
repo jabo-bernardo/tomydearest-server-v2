@@ -1,0 +1,14 @@
+// basic flows
+- authentication endpoint
+- create submission endpoint
+- create comment endpoint
+- create reaction endpoint
+- create bookmark endpoint
+- create report endpoint
+
+// phase 2
+- feed endpoint
+
+// phase 3
+- translation cron
+- moderation cron
