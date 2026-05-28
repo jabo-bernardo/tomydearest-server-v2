@@ -7,7 +7,11 @@ import reportsRoute from "./routes/reports";
 import submissionsRoute from "./routes/submissions";
 import authRoute from "./routes/auth";
 
-const app = new Hono().basePath('/api');
+type RequestVariables = {
+  userId?: string;
+}
+
+const app = new Hono<{ Variables: RequestVariables }>().basePath('/api');
 
 app.route("/v1/auth", authRoute);
 app.route("/v1/bookmarks", bookmarksRoute);
